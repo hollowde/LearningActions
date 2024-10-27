@@ -3,7 +3,7 @@ name: My first Workflow
 on:
   push:
     branches: 
-      -main
+      - main
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
        - name: Run one line script
          run: echo "Hello world from dawone"
        - name: list directory contents 
-       - run: tree 
+         run: tree 
   
           
   
