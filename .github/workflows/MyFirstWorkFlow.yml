@@ -12,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: Greet the user
-       - run: echo "Hello world from ${{github.actor}}"
+       - run: echo "Hello world from dawone
        - shell: bash
        - name: Checkout
-        uses: actions/checkout@v4.2.2
+         uses: actions/checkout@v4.2.2
+       - run: tree
   
