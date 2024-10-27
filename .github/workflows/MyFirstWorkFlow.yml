@@ -10,11 +10,11 @@ jobs:
   first_job:
     name:  My first job
     runs-on: ubuntu-latest
-    steps:
+    steps: 
+       - run: |
+           echo "Hello world from dawone"
        - name: Checkout
          uses: actions/checkout@v4.2.2
-       - name: Run one line script
-         run: echo "Hello world from dawone"
        - name: list directory contents 
          run: tree 
   
