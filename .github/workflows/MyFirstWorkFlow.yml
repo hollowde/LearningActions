@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
        - run: |
-           echo "Hello world from dawone"
+           echo "Hello ${{vars.WHO_TO_GREET}} from dawone"
+           echo "My secret is ${{secrets.ACTION_SECRET}} "
        - name: Checkout
          uses: actions/checkout@v4.2.2
        - name: list directory contents 
